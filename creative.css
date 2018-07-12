@@ -45,7 +45,7 @@ p {
 
 .bg-dark {
   color: white;
-  background-color: #222222 !important; }
+  background-color: #e2940d !important; }
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
@@ -78,7 +78,7 @@ body {
   -webkit-tap-highlight-color: #222222; }
 
 #mainNav {
-  border-color: rgba(34, 34, 34, 0.05);
+  border-color: rgba(255, 195, 0, 0.05);
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
@@ -87,7 +87,7 @@ body {
   #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: #F05F40;
+    color: #140300;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #f05f40; }
@@ -95,7 +95,7 @@ body {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #222222; }
+    color: ##43c1e8; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     font-size: 13px;
