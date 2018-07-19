@@ -45,7 +45,11 @@ p {
 
 .bg-dark {
   color: white;
+<<<<<<< HEAD
   background-color: #e2940d !important; }
+=======
+  background-color: #222222 !important; }
+>>>>>>> 354a0c915eab1eaf2a7af0d79bc645ebff8aa361
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
@@ -78,7 +82,11 @@ body {
   -webkit-tap-highlight-color: #222222; }
 
 #mainNav {
+<<<<<<< HEAD
   border-color: rgba(255, 195, 0, 0.05);
+=======
+  border-color: rgba(34, 34, 34, 0.05);
+>>>>>>> 354a0c915eab1eaf2a7af0d79bc645ebff8aa361
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
@@ -87,7 +95,11 @@ body {
   #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
+<<<<<<< HEAD
     color: #140300;
+=======
+    color: #F05F40;
+>>>>>>> 354a0c915eab1eaf2a7af0d79bc645ebff8aa361
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #f05f40; }
@@ -95,7 +107,11 @@ body {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
+<<<<<<< HEAD
     color: ##43c1e8; }
+=======
+    color: #222222; }
+>>>>>>> 354a0c915eab1eaf2a7af0d79bc645ebff8aa361
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     font-size: 13px;
