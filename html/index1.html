@@ -75,6 +75,9 @@
   .carousel-indicators li.active {
       background-color: #f4511e;
   }
+  .center {
+    text-align: center;
+  }
   .item h4 {
       font-size: 19px;
       line-height: 1.375em;
@@ -195,6 +198,51 @@
     .logo {
         font-size: 150px;
     }
+    .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
   }
   </style>
 </head>
@@ -216,6 +264,7 @@
         <li><a href="aboutus1.html">About Us</a></li>
         <li><a href="careers1.html">Careers</a></li>
         <li><a href="services1.html">Services</a></li>
+        <li><a href="contractvehicles1.html">Contract Vehicles</a></li>
         <li><a href="contactus1.html">Contact Us</a></li>
       </ul>
     </div>
@@ -225,21 +274,13 @@
 <div class="jumbotron text-center">
   <h1>Agility Technologies</h1>
   <p>Expert Salesforce.com solutions - tailored to meet your organization's growing IT needs.</p>
-  <form>
-    <div class="input-group">
-      <input type="search" class="form-control" size="50" placeholder="Search" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Search</button>
-      </div>
-    </div>
-  </form>
 </div>
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>About Us</h2><br>
+      <h2 class="center">About Us</h2><br>
       <h4>Delivering the next generation customer experience and business process automation using the world's leading SaaS/PaaS cloud platform -- Salesforce</h4><br>
       <p>We are a rapidly growing Salesforce System Integrator in the DC Metro area. We are also a registered Salesforce Partner and are delivering some of the most complex implementations for federal and commercial clients.  Agility excels at helping companies utilize their people, processes, and tools to harness the power of technology to change how they understand and interact with their customers. The growing team at Agility provide expertise across a range of Salesforce solutions including Sales Cloud, Marketing Cloud, CPQ, Service Cloud, Pardot, Community Cloud, Analytics and Mobile.</p>
       <br><button class="btn btn-default btn-lg">Learn More About Us</button>
@@ -252,9 +293,9 @@
 
 <div class="container-fluid bg-grey">
     <div class="col-sm-8">
-      <h2>Careers</h2><br>
+      <h2 class="center">Careers</h2><br>
       <p>At Agility Technologies, our culture is defined by talent and teamwork. Our team's diverse backgrounds and experiences strengthen our mission as a rapidly growing company.  Here at Agility, we believe that teamwork makes the dream work.</p>
-      <img src="https://lh3.googleusercontent.com/owoq7GlQTp6ABN25M_fZpUCxJDuKr5JUuiqJ-FPpXbu2-xv6xewaerhH6dP2tBJYrIhfNtjAh9F434gh33S4-zF3ZBm7C1gGa0RKRv9oo-qG7jneRUjcrQmSA2kMKag8-uaeA7_aOGrmI8snqudePNlaWUdUiaECrE1PTXgsyVQtr_RLyiS7onm7szBu-TsR9FuMlF8FQUqMAXanQ4K36YCCNTFamGKYfvUjY23ON_YDO2gJnsfzeiM68Qxyb3WNfodPNlAErOZnrgMrewuc58NG95qKGFdMtp2hyTljiYllkeEaknFu1x2CpA3J7lxcGxc0kN0vb2PvELVelZfkzXWrRtuyUcfdnVr0hbpREeEZzXiEx8YwJPViRiINn-1RKKi33Zk0I9b-vfG68NQsri4wpURNrygYGRzbt5tx1qhir9JwNPgmyiQAL1f_om0FRoLh65g0UNWNCq1P7veXM9-w_0q95muKYRcVfUsFzh4nyQxi_k7ZCvfm1V1RS5s5abC9dygsLYpSq_BpBK0_A_zK9Ih9kVfr-V7zyj_1UbUTl0v5d-NEDCuc0IuDqVVd1JwOdS1bNpWIo880LqC7Xp3zASyVoV3xSRFCfcE=w693-h923-no" width="350" height="500"  class ="img-rounded" class="img-fluid pull-xs-left">
+      <img src="https://assets.entrepreneur.com/content/3x2/1300/20160531165449-hands-teamwork-group.jpeg?width=700&crop=2:1"/>
   <p>Connect with us on LinkedIn</p>
       <a href="https://www.linkedin.com/jobs/search/?f_C=1837625&locationId=OTHERS.worldwide"</a>
         <img src="https://lh3.googleusercontent.com/CLSLxPOLyJ2yYRZve6NdVMqiefos1sBIrN-zDuTYaJfEkzXtIB1o" style="width:150px;height:150px";/>
@@ -305,7 +346,7 @@
 </div>
 
 
-  <h2>Customers & Partners</h2>
+  <h2 class="center">Customers & Partners</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -339,79 +380,13 @@
   </div>
 </div>
 
-<!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
-  <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Basic</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Pro</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Premium</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Questions? Fill out our form</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> 12020 Sunrise Valley Dr. Reston, VA</p>
       <p><span class="glyphicon glyphicon-phone"></span> 202-427-6487 </p>
       <p><span class="glyphicon glyphicon-envelope"></span> info@agilitytechinc.com</p>
@@ -419,34 +394,42 @@
     <div class="col-sm-7 slideanim">
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="name" name="name" placeholder="First Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Last Name" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="phone" name="phone" placeholder="Phone" type="phone" required>
+        </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Question" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
           <button class="btn btn-default pull-right" type="submit">Send</button>
         </div>
       </div>
+</div>
+      </div>
     </div>
   </div>
 </div>
+
 
 <!-- Add Google Maps -->
 <div id="googleMap" style="height:400px;width:100%;"></div>
 <script>
 function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var myCenter = new google.maps.LatLng(38.948461, -77.363559);
 var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
 marker.setMap(map);
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpe5U8Y_IH0v10CxKWm3KtglvUWLhC-3Y&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
