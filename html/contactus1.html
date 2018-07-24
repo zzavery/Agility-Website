@@ -139,7 +139,7 @@
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
       color: #f4511e !important;
-      background-color: #fff !important;
+      background-color: #000080 !important;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
@@ -195,7 +195,10 @@
     .logo {
         font-size: 150px;
     }
+    li{
+      background-color:#f4511e;
   }
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -215,7 +218,16 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="aboutus1.html">About Us</a></li>
         <li><a href="careers1.html">Careers</a></li>
-        <li><a href="services1.html">Services</a></li>
+        <li class="dropdown"><a href="services1.html" data-toggle="dropdown" class="dropdown-content">Services <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+                        <li><a href="#">Cloud Strategy & Enterprise Architecture</a></li>
+                        <li><a href="#">Governance and COE</a></li>
+                        <li><a href="#">App Dev & Integration</a></li>
+                        <li><a href="#">Program & Project Management</a></li>
+                        <li><a href="#">Outsourcing</a></li>
+                        <li><a href="#">Recruiting</a></li>
+                    </ul>
+              </li>
         <li><a href="contractvehicles1.html">Contract Vehicles</a></li>
         <li><a href="contactus1.html">Contact Us</a></li>
       </ul>

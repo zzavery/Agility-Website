@@ -142,7 +142,7 @@
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
       color: #f4511e !important;
-      background-color: #fff !important;
+      background-color: #000080 !important;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
@@ -164,6 +164,13 @@
   p{
 
   }
+
+  ul{
+    ;
+  }
+  li{
+    background-color:#f4511e;
+}
   @keyframes slide {
     0% {
       opacity: 0;
@@ -198,18 +205,19 @@
     .logo {
         font-size: 150px;
     }
-    .dropdown {
+    .dropdown-menu {
     float: left;
     overflow: hidden;
+    color: #f4511e;
 }
 
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: orange;
     padding: 14px 16px;
-    background-color: inherit;
+    background-color: rgb(255, 165, 0);
     font-family: inherit;
     margin: 0;
 }
@@ -218,31 +226,30 @@
     background-color: red;
 }
 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f4511e;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(255, 165, 0);
     z-index: 1;
 }
 
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color:#000080;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    background-color:#000080;
 }
+
   }
   </style>
 </head>
@@ -263,7 +270,16 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="aboutus1.html">About Us</a></li>
         <li><a href="careers1.html">Careers</a></li>
-        <li><a href="services1.html">Services</a></li>
+        <li class="dropdown"><a href="services1.html" data-toggle="dropdown" class="dropdown-content">Services <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+                        <li><a href="#">Cloud Strategy & Enterprise Architecture</a></li>
+                        <li><a href="#">Governance and COE</a></li>
+                        <li><a href="#">App Dev & Integration</a></li>
+                        <li><a href="#">Program & Project Management</a></li>
+                        <li><a href="#">Outsourcing</a></li>
+                        <li><a href="#">Recruiting</a></li>
+                    </ul>
+              </li>
         <li><a href="contractvehicles1.html">Contract Vehicles</a></li>
         <li><a href="contactus1.html">Contact Us</a></li>
       </ul>
@@ -283,7 +299,7 @@
       <h2 class="center">About Us</h2><br>
       <h4>Delivering the next generation customer experience and business process automation using the world's leading SaaS/PaaS cloud platform -- Salesforce</h4><br>
       <p>We are a rapidly growing Salesforce System Integrator in the DC Metro area. We are also a registered Salesforce Partner and are delivering some of the most complex implementations for federal and commercial clients.  Agility excels at helping companies utilize their people, processes, and tools to harness the power of technology to change how they understand and interact with their customers. The growing team at Agility provide expertise across a range of Salesforce solutions including Sales Cloud, Marketing Cloud, CPQ, Service Cloud, Pardot, Community Cloud, Analytics and Mobile.</p>
-      <br><button class="btn btn-default btn-lg">Learn More About Us</button>
+      <br><button class="btn btn-default btn-lg"><a href="aboutus1.html">Learn More About Us</a></button>
     </div>
     <div class="col-sm-3">
       <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Salesforce_logo.svg/378px-Salesforce_logo.svg.png" class="img-responsive alt="Salesforce" width="350" height="120"/>
@@ -298,7 +314,8 @@
       <img src="https://assets.entrepreneur.com/content/3x2/1300/20160531165449-hands-teamwork-group.jpeg?width=700&crop=2:1"/>
   <p>Connect with us on LinkedIn</p>
       <a href="https://www.linkedin.com/jobs/search/?f_C=1837625&locationId=OTHERS.worldwide"</a>
-        <img src="https://lh3.googleusercontent.com/CLSLxPOLyJ2yYRZve6NdVMqiefos1sBIrN-zDuTYaJfEkzXtIB1o" style="width:150px;height:150px";/>
+        <div <script src="//platform.linkedin.com/in.js" type="text/javascript"><img src="https://lh3.googleusercontent.com/CLSLxPOLyJ2yYRZve6NdVMqiefos1sBIrN-zDuTYaJfEkzXtIB1o" style="width:150px;height:150px";/></script>
+<script type="IN/FollowCompany" data-id="1837625"></script> </div>
     </div>
   </div>
 </div>
@@ -422,7 +439,7 @@
 <div id="googleMap" style="height:400px;width:100%;"></div>
 <script>
 function myMap() {
-var myCenter = new google.maps.LatLng(38.948461, -77.363559);
+var myCenter = new google.maps.LatLng(38.948736, -77.36341);
 var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
