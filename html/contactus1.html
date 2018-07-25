@@ -161,6 +161,13 @@
   p{
 
   }
+
+  ul{
+    ;
+  }
+  li{
+    background-color:#f4511e;
+}
   @keyframes slide {
     0% {
       opacity: 0;
@@ -195,10 +202,52 @@
     .logo {
         font-size: 150px;
     }
-    li{
-      background-color:#f4511e;
-  }
+    .dropdown-menu {
+    float: left;
+    overflow: hidden;
+    color: #f4511e;
 }
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: orange;
+    padding: 14px 16px;
+    background-color: rgb(255, 165, 0);
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f4511e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 165, 0);
+    z-index: 1;
+}
+
+}
+
+.dropdown-content a:hover {
+    background-color:#000080;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color:#000080;
+}
+
+  }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -236,7 +285,7 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Contact Us</h1>
+  <h1><strong>Contact Us</strong></h1>
 </div>
 
 <!-- Container (Contact Section) -->
@@ -329,54 +378,7 @@ $(document).ready(function(){
         }
     });
   });
-
-  <div id="map"></div>
-    <script>
-      // Note: This example requires that you consent to location sharing when
-      // prompted by your browser. If you see the error "The Geolocation service
-      // failed.", it means you probably did not give permission for the browser to
-      // locate you.
-      var map, infoWindow;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 38.948461, lng: -77.363559},
-          zoom: 6
-        });
-        infoWindow = new google.maps.InfoWindow;
-
-        // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
-
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            infoWindow.open(map);
-            map.setCenter(pos);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
-      }
-
-      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-        infoWindow.open(map);
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpe5U8Y_IH0v10CxKWm3KtglvUWLhC-3Y&callback=initMap">
-    </script>
-</script>
+  </script>
 
 </body>
 </html>

@@ -161,6 +161,13 @@
   p{
 
   }
+
+  ul{
+    ;
+  }
+  li{
+    background-color:#f4511e;
+}
   @keyframes slide {
     0% {
       opacity: 0;
@@ -195,10 +202,52 @@
     .logo {
         font-size: 150px;
     }
-li{
-    background-color:#f4511e;
-  }
+    .dropdown-menu {
+    float: left;
+    overflow: hidden;
+    color: #f4511e;
 }
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: orange;
+    padding: 14px 16px;
+    background-color: rgb(255, 165, 0);
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f4511e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 165, 0);
+    z-index: 1;
+}
+
+}
+
+.dropdown-content a:hover {
+    background-color:#000080;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color:#000080;
+}
+
+  }
 
   </style>
 </head>
@@ -221,7 +270,7 @@ li{
         <li><a href="careers1.html">Careers</a></li>
         <li class="dropdown"><a href="services1.html" data-toggle="dropdown" class="dropdown-content">Services <b class="caret"></b></a>
           <ul class="dropdown-menu">
-                        <li><a href="#">Cloud Strategy & Enterprise Architecture</a></li>
+                        <li><a href="services1.html">Cloud Strategy & Enterprise Architecture</a></li>
                         <li><a href="#">Governance and COE</a></li>
                         <li><a href="#">App Dev & Integration</a></li>
                         <li><a href="#">Program & Project Management</a></li>
@@ -229,7 +278,7 @@ li{
                         <li><a href="#">Recruiting</a></li>
                     </ul>
               </li>
-        <li><a href="contractvehicles1">Contract Vehicles</a></li>
+        <li><a href="contractvehicles1.html">Contract Vehicles</a></li>
         <li><a href="contactus1.html">Contact Us</a></li>
       </ul>
     </div>
@@ -237,7 +286,7 @@ li{
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Contract Vehicles</h1>
+  <h1><strong>Contract Vehicles</strong></h1>
 </div>
 
 

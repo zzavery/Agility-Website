@@ -122,83 +122,132 @@
       margin: 15px 0;
       background-color: #f4511e;
       color: #fff;
-  }
-  .navbar {
-      margin-bottom: 0;
-      background-color: #f4511e;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
-      background-color: #000080 !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
-  }
-  footer .glyphicon {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-  p{
+    }
+    .navbar {
+        margin-bottom: 0;
+        background-color: #f4511e;
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+        font-family: Montserrat, sans-serif;
+    }
+    .navbar li a, .navbar .navbar-brand {
+        color: #fff !important;
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: #f4511e !important;
+        background-color: #000080 !important;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+    }
+    footer .glyphicon {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #f4511e;
+    }
+    .slideanim {visibility:hidden;}
+    .slide {
+        animation-name: slide;
+        -webkit-animation-name: slide;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible;
+    }
+    p{
 
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
     }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
+
+    ul{
+      ;
     }
     li{
       background-color:#f4511e;
   }
-}
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+      .btn-lg {
+          width: 100%;
+          margin-bottom: 35px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .logo {
+          font-size: 150px;
+      }
+      .dropdown-menu {
+      float: left;
+      overflow: hidden;
+      color: #f4511e;
+  }
+
+  .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: orange;
+      padding: 14px 16px;
+      background-color: rgb(255, 165, 0);
+      font-family: inherit;
+      margin: 0;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+  }
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f4511e;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(255, 165, 0);
+      z-index: 1;
+  }
+
+  }
+
+  .dropdown-content a:hover {
+      background-color:#000080;
+  }
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+      background-color:#000080;
+  }
+
+    }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -220,12 +269,12 @@
         <li><a href="careers1.html">Careers</a></li>
         <li class="dropdown"><a href="services1.html" data-toggle="dropdown" class="dropdown-content">Services <b class="caret"></b></a>
           <ul class="dropdown-menu">
-                        <li><a href="#">Cloud Strategy & Enterprise Architecture</a></li>
-                        <li><a href="#">Governance and COE</a></li>
-                        <li><a href="#">App Dev & Integration</a></li>
-                        <li><a href="#">Program & Project Management</a></li>
-                        <li><a href="#">Outsourcing</a></li>
-                        <li><a href="#">Recruiting</a></li>
+                        <li><a href="services#cloud">Cloud Strategy & Enterprise Architecture</a></li>
+                        <li><a href="services1.html">Governance and COE</a></li>
+                        <li><a href="services1.html#app">App Dev & Integration</a></li>
+                        <li><a href="services1.html#program">Program & Project Management</a></li>
+                        <li><a href="services1.html#out">Outsourcing</a></li>
+                        <li><a href="services1.html#recruiting">Recruiting</a></li>
                     </ul>
               </li>
         <li><a href="contractvehicles1.html">Contract Vehicles</a></li>
@@ -236,38 +285,29 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Services</h1>
+  <h1><strong>Services</strong></h1>
 </div>
 
 
     <div class="container-fluid">
         <img src="https://cdn-images-1.medium.com/max/1100/1*vdSIa2rFEAZS1YUsgOZR0A.jpeg" style="width:300px;height:220px;"/>
         <p>At Agility, we trust in the Agile development model, to ensure that you get the most from our services.</p>
-        <p>Agility Technologies, Inc. provides services ranging from</p>
-        <ul>
-          <li>Cloud Strategy & Enterprise Architecture</li>
-          <li>Governance and COE</li>
-          <li>App Dev & Integration</li>
-          <li>Program & Project Management</li>
-          <li>Out-sourcing</li>
-          <li>Recruiting</li>
-      </ul>
     </div>
 
 <div class="container">
     <!-- Example row of columns -->
 
-      <h3>Cloud Stategy & Enterprise Architecture</h3>
+      <h3><a href="services#cloud" title>Cloud Stategy & Enterprise Architecture</a></h3>
       <p>We devise the optimal cloud strategy and road map to incorporate Salesforce CRM & Force.com platform, enterprise application modernization, mobile strategy with API-first development.</p>
-      <h3>Governance and COE</h3>
+      <h3><a id="GovCloud">Governance and COE</a></h3>
       <p>FISMA, FedRAMP requirements for GovCloud or HIPAA compliance, our experts can set up a Center of Excellence that ensures best practices for developing and deploying Enterprise apps, on-premise or in the cloud.</p>
-      <h3>App Dev & Integration</h3>
+      <h3><a id="App">App Dev & Integration</a></h3>
       <p>Our Certified Developers and Architects follow industry standards, design patterns and security principles to develop enterprise solutions, ground to cloud and cloud to cloud integration.</p>
-      <h3>Program & Project Management</h3>
+      <h3><a id="Program">Program & Project Management</a></h3>
       <p>Two words -- We Deliver. Using proven planning methods and expertise with key focus on program and project goals, our services make delivery more efficient; controlling costs, schedules, and work scope without compromising quality.</p>
-      <h3>Out-sourcing</h3>
+      <h3><a id="Out">Out-sourcing</a></h3>
       <p>Our development services are driven by robust SLAs, based on industry-standards and delivered by a cost-effective mix of onshore, nearshore and offshore resources. With our commitment to quality and continuous value generation, we do more than just keeping the lights on for less.</p>
-      <h3>Recruiting</h3>
+      <h3><a id="Recruiting">Recruiting</a></h3>
       <p>Connect with top talent that can transform your business. Whether you have a well-established recruiting process or you're just starting out, we can connect your company to hard-to-find and highly sought-after candidates nationwide.</p>
 
       <footer class="container-fluid text-center">
